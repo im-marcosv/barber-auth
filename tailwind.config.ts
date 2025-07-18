@@ -6,7 +6,12 @@ const config: Config = {
     // darkMode as a string (not an array) satisfies the Tailwind DarkMode type
     darkMode: "class",
 
-    content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.css",
+    ],
 
     theme: {
         extend: {
@@ -33,7 +38,8 @@ const config: Config = {
                     "4": "hsl(var(--chart-4))",
                     "5": "hsl(var(--chart-5))",
                 },
-                primary: { DEFAULT: "#E7C9A5", admin: "#25388C" },
+                primary: "#E7C9A5",
+                "primary-admin": "#25388C",
                 green: {
                     DEFAULT: "#027A48",
                     100: "#ECFDF3",
